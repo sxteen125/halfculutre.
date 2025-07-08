@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order — halfculutre.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">halfculutre.</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="price.html">Price</a>
+    </div>
+  </nav>
+
+  <main class="form-section">
+    <h1>Form Order</h1>
+    <p class="subtext">Isi form di bawah, pesanan langsung diproses via WhatsApp atau API.</p>
+
+    <form id="orderForm">
+      <label for="service">Layanan</label>
+      <select id="service" required>
+        <option value="">Pilih layanan</option>
+        <option>Instagram Followers Indo</option>
+        <option>Instagram Likes Indo</option>
+        <option>Instagram Reels Views</option>
+        <option>TikTok Followers</option>
+        <option>TikTok Likes</option>
+        <option>TikTok Views</option>
+      </select>
+
+      <label for="target">Username / Link</label>
+      <input type="text" id="target" placeholder="@username atau link konten" required />
+
+      <label for="jumlah">Jumlah Pesanan</label>
+      <input type="number" id="jumlah" placeholder="Contoh: 1000" required />
+
+      <button type="submit" class="btn primary full">Kirim Order</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
